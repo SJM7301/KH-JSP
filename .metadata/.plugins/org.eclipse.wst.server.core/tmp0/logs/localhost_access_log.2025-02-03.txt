@@ -197,3 +197,9 @@
 0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:46:29 +0900] "GET /JSPBook/ch04/setProperty.jsp HTTP/1.1" 200 208
 0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:47:29 +0900] "GET /JSPBook/ch04/getProperty01.jsp HTTP/1.1" 200 198
 0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:47:33 +0900] "GET /JSPBook/ch04/getProperty01.jsp HTTP/1.1" 200 198
+127.0.0.1 - - [03/Feb/2025:15:48:54 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:48:54 +0900] "GET /JSPBook/ch04/getProperty01.jsp HTTP/1.1" 200 194
+0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:48:55 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:51:35 +0900] "GET /JSPBook/ch04/getProperty02.jsp HTTP/1.1" 200 200
+0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:51:37 +0900] "GET /JSPBook/ch04/getProperty01.jsp HTTP/1.1" 200 194
+0:0:0:0:0:0:0:1 - - [03/Feb/2025:15:51:38 +0900] "GET /JSPBook/ch04/getProperty02.jsp HTTP/1.1" 200 200

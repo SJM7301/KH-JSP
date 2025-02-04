@@ -1,0 +1,8 @@
+package dto;
+
+import java.io.*;
+
+public class Book implements Serializable{
+
+	public static final long serialVersionUID = -4274700572038677000L;
+}

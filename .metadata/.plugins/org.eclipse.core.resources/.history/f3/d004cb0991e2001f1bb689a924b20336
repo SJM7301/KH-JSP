@@ -1,0 +1,10 @@
+package dto;
+
+import java.io.*;
+
+public class Book implements Serializable{
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -10,7 +10,7 @@
 <body>
 	<%
 		String value = request.getQueryString();
-		out.println("전송된 파라미터값: " + value);
+		out.println("전송된 파라미터값: " + URLDecoder.decode(value));
 	%>
 	
 	<%

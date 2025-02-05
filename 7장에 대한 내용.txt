@@ -1,0 +1,21 @@
+파일 업로드 처리 방법
+종류						특징					필요한 라이브러리
+MultipartRequest 이용하기		가장 간단한 방법			cos.jar
+아파치 API 이용하기			편리하고 강력한 API 제공	commons-fileupload.jar, commons-io.jar
+
+=====================================================================================================
+MultipartRequest 생성자의 매개변수
+매개변수		설명
+request		Request 내장 객체를 설정한다.
+saveDirectory	서버의 파일 저장 경로를 설정한다.
+maxPostSize	파일의 최대 크기(바이트 단위)를 설정한다. 최대 크기를 초과하면 IOExeption이 발생한다.
+encoding		인코딩 유형을 설정한다.
+policy		파일명 변경 정책을 설정한다. saveDirectory에 파일명이 중복되는 경우 덮어쓰기 여부를 설정하며, 설정하지 않으면 덮어쓴다.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MultipartRequest 메소드의 종류
+메소드					유형				설명
+getContentType(String name)	String			업로드된 파일의 콘텐츠 유형을 반환한다. 업로드된 파일이 없으면 null을 반환한다.
+getParameter(String name)		String			요청 파라미터 이름이 name인 값을 전달받는다.
+getParameterNames()			java.util.Enumeration	요청 파라미터 이름을
+getFile(String name)			java.io.File			서버에 업로드된 파일에 대한 파일 객체를 반환한다. 업로드된 파일이 없으면 null값을 반환한다.

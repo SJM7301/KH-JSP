@@ -19,7 +19,8 @@
          </div>
       </div>
       <%
-         ArrayList<Book> listofBooks = bookDAO.getAllBooks();
+        BookRepository dao = BookRepository.getInstance();
+      	ArrayList<Book> listofBooks = dao.getAllBooks();
       %>
 
       <div class="row align-items-md-stretch text-center">

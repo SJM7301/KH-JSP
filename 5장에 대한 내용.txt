@@ -1,0 +1,67 @@
+내장 객체의 종류
+내장 객체		반환 유형							설명
+request		javax.servlet.servlet.http.HttpServletRequest	웹 브라우저의 HTTP 요청 정보를 저장한다.
+response		javax.servlet.servlet.http.HttpServletResponse	웹 브라우저의 HTTP 요청에 대한 응답 정보를 저장한다.
+out			javax.servlet.jsp.jsp.jspWriter				JSP 페이지에 출력할 내용을 담고 있는 출력 스트림이다.
+session		javax.servlet.http.HttpSession				웹 브라우저의 정볼르 유지하기 위한 세션 정보를 저장한다.(13장 참고)
+application		javax.servlet.ServletContext				웹 애플리케이션의 콘텍스트 정보를 저장한다.
+pageContext	javax.servlet.jsp.PageContext				JSP 페이지의 정보를 저장한다.
+page			java.lang.Object						JSP 페이지를 구현한 자바 클래스로 JSP 페이지 자체를 나타낸다.
+config		javax.servlet.ServletConfig				JSP 페이지의 설정 정보를 저장한다.
+exception		javax.servlet.Throwable					JSP 페이지의 예외 발생을 처리한다.(11장 참고)
+
+====================================================================================================
+속성 처리 메소드의 종류
+메소드						반환 유형			설명
+setAttribute (String name, Object value)	void				해당 내장 객체의 속성 이름이 name인 속성 값을 value로 저장한다.
+getAttribute (String name)			Object			해당 내장 객체의 속성 이름이 name인 속성 값을 가져온다.
+removeAttribute (String name)		void				해당 내장 객체의 속성 이름이 name인 속성을 삭제한다.
+getAttributeNames()				java.util.Enumeration	해당 내장 객체의 모든 속성 이름을 가져온다.(단, pageContext 내장 객체는 이 메소드를 제공하지 않는다.)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+요청 파라미터 관련 메소드의 종류
+요청 파라미터 관련 메소드			반환 유형			설명
+getParameter (String name)			String			요청 파라미터 이름이 name인 값을 전달 받는다. 요청 파라미터 갑싱 없으면 null을 반환한다.
+getParameterValues (String name)		String[]			모든 요청 파라미터 이름이 name인 값을 배열 형태로 전달 받는다. 요청 파라미터 값이 없으면 null을 반환한다.
+getParameterNames()				java.util.Enumeration	모든 요청 파라미터의 이름과 값을 Enumeration 객체 타입으로 전달 받는다.
+getParameterMap()				java.util.Map		모든 요청 파라미터의 이름과 값을 Map 객체 타입으로 전달 받는다. [Map 객체 타입은 (요청 파라미터 이름, 값) 형식으로 구성된다.]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+요청 HTTP 헤더 관련 메소드의 종류
+요청 HTTP 헤더 관련 메소드		반환 유형				설명
+getHeader (String name)		String				설정한 name의 헤더 값을 가져온다.
+getHeaders (String name)		Enumeration			설정한 name의 헤더 목록 값을 가져온다.
+getHeaderNames()			Enumeration			모든 헤더 이름을 가져온다.
+getInHeader (String name)		int					설정한 name의 헤더 값을 정수로 가져온다.
+getDateHeader (String name)		long					설정한 name의 헤더 값을 시간 값으로 가져온다.
+getCookies()				javax.servlet.http.Cookie	모든 쿠키 값을 가져온다.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+웹 브라우저/서버 관련 메소드의 종류
+웹 브라우저 / 서버 관련 메소드	반환 유형		설명
+getRemoteAddr()				String		웹 브라우저의 IP 주소를 가져온다.
+getContentLength()			long			웹 브라우저의 요청 파라미터 길이를 가져온다.
+getCharacterEncoding()		String		웹 브라우저의 문자 인코딩을 가져온다.
+getContentType()				String		웹 브라우저의 콘텐츠 유형을 가져온다.
+getProtocol()				String		웹 브라우저의 요청 프로토콜을 가져온다.
+getMethod()				String		웹 브라우저의 HTTP 요청 메소드(GET, POST)를 가져온다.
+getRequestURI()				String		웹 브라우저의 요청한 URI 경로를 가져온다.
+getContextPath()				String		현재 JSP 페이지의 웹 애플리케이션 콘텍스트 경로를 가져온다.
+getServerName()				String		서버 이름을 가져온다.
+getServerPort()				int			실행 중인 서버 포트 번호를 가져온다.
+getQueryString()				String		웹 브라우저의 전체 요청 파라미터 문자열[물음표(?) 다음 URL에 할당된 문자열]을 가져온다.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+속성을 공유할 수 있는 유효 범위
+영역			내장 객체		속성의 유효 범위
+page			pageContext	해당 페이지가 클라이언트에게 서비스를 제공하는 동안 유효하다.
+request		request		클라이언트의 요청이 처리되는 동안 유효하다.
+session		session		세션이 유지되는 동안 유효하다.
+application		application		웹 애플리케이션이 실행되고 있는 동안 유효하다.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+페이지 이동 관련 메소드의 종류
+페이지 이동 관련 메소드	반환 유형	설명
+sendRedirect (String url)	void		설정한 URL 페이지로 강제 이동한다.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

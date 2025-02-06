@@ -4,7 +4,7 @@
 <%@ page import="java.util.*, java.io.*" %>
 
 <%
-	MultipartRequest multi = new MultipartRequest(request, "C:\\eclipse\\JSP\\JSPBook\\src\\main\\webapp\\upload", 5*1024*1024, "utf-8", new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, "C:\\eclipse\\JSP\\JSPBook\\src\\main\\webapp\\upload", 5 *1024 * 1024, "utf-8", new DefaultFileRenamePolicy());
 	
 	Enumeration params = multi.getParameterNames();
 	
@@ -30,8 +30,7 @@
 		out.println("파일 콘텐츠 유형: " + type + "<br>");
 		
 		if(file != null){
-			out.println("파일 크기: " + file.length());
-			out.println("<br>");
+			out.println("파일 크기: " + file.length() + "<br>");
 		}
 	}
 %>

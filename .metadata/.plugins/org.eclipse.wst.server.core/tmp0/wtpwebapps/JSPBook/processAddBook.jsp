@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*, dto.*, dao.*"%>
+<%@ page import="com.oreilly.servlet.*, com.oreilly.servlet.multipart.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,13 @@
 <body>
 	<%
 		request.setCharacterEncoding("UTF-8");
+		
+		String filename = "";
+		String realFolder = "C:\\eclipse\\JSP\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\JSPBook\\resources\\images";
+		int maxSize = 5 * 1024 * 1024; // 최대 업로드될 파일의 크기 5MB
+		String encType = "UTF-8"; //인코딩 유형
+		
+		MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
 		
 		String bookId = request.getParameter("bookId");
 		String name = request.getParameter("name");
@@ -21,6 +29,10 @@
 		String category = request.getParameter("category");
 		String unitsInStock = request.getParameter("unitsInStock");
 		String condition = request.getParameter("condition");
+		
+		Enumeration files = multi.getFileNames();
+		String fname = (String)files.nextElement();
+		String fileName = multi.getFilesystemName(fname);
 		
 		int price;
 		
@@ -51,6 +63,7 @@
 		newBook.setCategory(category);
 		newBook.setUnitsInStock(stock);
 		newBook.setCondition(condition);
+		newBook.setFilename(fileName);
 		
 		dao.addBook(newBook);
 		

@@ -141,3 +141,15 @@
 0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:32:34 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2150
 0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:32:34 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2150
 0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:32:34 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2150
+127.0.0.1 - - [06/Feb/2025:17:32:58 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:32:59 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2150
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:32:59 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:33:50 +0900] "GET /JSPBook/ch08/validation05_process.jsp HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:33:53 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2150
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:34:38 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2062
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:36:07 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2062
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:36:18 +0900] "POST /JSPBook/ch08/validation05_process.jsp HTTP/1.1" 200 295
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:36:47 +0900] "POST /JSPBook/ch08/validation05_process.jsp HTTP/1.1" 200 277
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:37:36 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2062
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:42:15 +0900] "GET /JSPBook/ch08/validation05.jsp HTTP/1.1" 200 2078
+0:0:0:0:0:0:0:1 - - [06/Feb/2025:17:42:23 +0900] "POST /JSPBook/ch08/validation05_process.jsp HTTP/1.1" 200 277

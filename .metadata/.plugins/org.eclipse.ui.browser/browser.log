@@ -89,3 +89,39 @@
 2월 06, 2025 16:00:12.03 Created TensorFlow Lite XNNPACK delegate for CPU.
 2월 06, 2025 17:28:46.04 Created TensorFlow Lite XNNPACK delegate for CPU.
 2월 06, 2025 17:33:01.28 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+2월 07, 2025 10:52:25.57 NEW SESSION
+2월 07, 2025 10:52:25.57 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+2월 07, 2025 14:23:06.32 NEW SESSION
+2월 07, 2025 14:23:06.33 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 14:26:07.61 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 14:26:45.38 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 14:27:11.34 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 14:28:03.64 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 14:41:50.43 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:11:09.35 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:11:37.19 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:22:47.62 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:50:14.81 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:50:32.31 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 15:55:49.86 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+2월 07, 2025 16:03:55.82 NEW SESSION
+2월 07, 2025 16:03:55.82 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:05:49.75 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:08:40.41 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:09:00.50 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:17:17.79 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:18:12.33 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:20:09.72 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:23:26.00 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:31:32.75 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:35:30.48 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:35:30.63 [12392:7652:0207/163530.636:ERROR:cpu_probe_win.cc(135)] PdhGetFormattedCounterValue failed: Error (0x13D) while retrieving error. (0x800007D6)
+2월 07, 2025 16:35:30.63 [12392:12676:0207/163530.636:ERROR:cpu_probe_win.cc(135)] PdhGetFormattedCounterValue failed: Error (0x13D) while retrieving error. (0x800007D6)
+2월 07, 2025 16:38:09.00 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:38:18.50 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 16:39:33.29 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 07, 2025 17:45:09.41 [3028:5516:0207/174509.416:ERROR:edge_auth_errors.cc(527)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
+2월 07, 2025 17:45:09.41 

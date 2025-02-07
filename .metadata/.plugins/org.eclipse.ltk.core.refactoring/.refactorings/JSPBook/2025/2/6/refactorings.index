@@ -1,2 +1,11 @@
 1738546634221	Move 'jstl-1.2_2.jar' to 'lib'
 1738636101298	Move compilation unit
+1738898264209	Rename resource 'validation_Process_test.jsp'
+1738911517061	Move file
+1738911518378	Move file
+1738912997099	Rename resource 'locale.jsp'
+1738913795864	Rename resource 'myBundle_en1.properties'
+1738913870507	Rename resource 'myBundle1_en.properties'
+1738913877825	Rename resource 'myBundle1.properties'
+1738913947418	Rename resource 'myBundlea.properties'
+1738913955079	Rename resource 'myBundlea_en.properties'

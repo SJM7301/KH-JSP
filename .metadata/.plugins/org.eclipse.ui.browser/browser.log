@@ -125,3 +125,13 @@
 2월 07, 2025 16:39:33.29 Created TensorFlow Lite XNNPACK delegate for CPU.
 2월 07, 2025 17:45:09.41 [3028:5516:0207/174509.416:ERROR:edge_auth_errors.cc(527)] EDGE_IDENTITY: Get Default OS Account failed: Error: Primary Error: kImplicitSignInFailure, Secondary Error: kAccountProviderFetchError, Platform error: 0, Error string: 
 2월 07, 2025 17:45:09.41 
+
+2월 10, 2025 09:03:45.98 NEW SESSION
+2월 10, 2025 09:03:45.99 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 09:16:16.38 [1896:14924:0210/091616.386:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+2월 10, 2025 09:16:18.31 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 16:07:04.93 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 16:46:48.47 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 17:19:08.78 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 17:20:29.17 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 10, 2025 17:46:50.62 Created TensorFlow Lite XNNPACK delegate for CPU.

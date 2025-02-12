@@ -4,10 +4,18 @@
     <fullyQualifiedTypeName name="dao.BookRepository"/>
     <fullyQualifiedTypeName name="jakarta.servlet.FilterConfig"/>
     <fullyQualifiedTypeName name="org.apache.catalina.startup.PasswdUserDatabase"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.FilterChain"/>
+    <fullyQualifiedTypeName name="com.sun.jmx.mbeanserver.Util"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletRequest"/>
+    <fullyQualifiedTypeName name="java.util.stream.Sink.ChainedDouble"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="java.text.DateFormat"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Formatter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.jsp.jstl.core.Config"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
 </qualifiedTypeNameHistroy>

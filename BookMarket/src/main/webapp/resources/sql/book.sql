@@ -16,3 +16,5 @@ create table if not exists book(
 show tables;
 
 desc book;
+
+select * from book;

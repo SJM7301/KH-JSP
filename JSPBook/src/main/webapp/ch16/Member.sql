@@ -6,3 +6,4 @@ create table if not exists Member(
 );
 
 select * from Member;
+desc Member;

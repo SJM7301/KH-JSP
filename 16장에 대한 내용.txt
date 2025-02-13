@@ -5,6 +5,34 @@ executeUpdate(String sql)	int		삽입, 수정, 삭제와 관련된 SQL문 실행
 close()				void		Statement 객체를 반환할 때 사용한다.
 
 =====================================================================================================
-
+setXxx() 메소드의 종류
+메소드								반환 유형	설명
+setString(int parameterIndex, String x)			void		필드 유형이 문자열인 경우
+setInt(int parameterIndex, int x)				void		필드 유형이 정수형인 경우
+setLong(int parameterIndex, long x)			void		필드 유형이 정수형인 경우
+setDouble(int parameterIndex, double x)			void		필드 유형이 실수형인 경우
+setFloat(int parameterIndex, float x)			void		필드 유형이 실수형인 경우
+setObject(int parameterIndex, Object x)			void		필드 유형이 객체형인 경우
+setDate(int parameterIndex, Date x)			void		필드 유형이 날짜형인 경우
+setTimestamp(int parameterIndex, Timestamp x)	void		필드 유형이 시간형인 경우
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PreparedStatement 객체의 메소드 종류
+메소드			반환 유형	설명
+executeQuery()		ResultSet	SELECT 문을 실행할 때 사용한다. (ResultSet 객체 반환)
+executeUpdate()		int		삽입, 수정, 삭제와 관련된 SQL문 실행에 사용한다.
+close()			void		PreparedStatement 객체를 반환할 때 사용한다.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ResultSet 객체의 메소드 종류
+메소드					반환 유형	설명
+getXxx(int ColumnIndex)		XXX		SELECT문을 실행할 때 사용한다. (ResultSet객체 반환)
+getXxx(String ColumnName)		XXX		삽입, 수정, 삭제와 관련된 SQL문 실행에 사용한다.
+absolute(int row)				boolean	설정한 row행으로 커서를 이동한다.
+beforeFirst()				void		첫 번쨰 행의 이전으로 커서를 이동한다.
+afterLast()					void		마지막 행의 다음으로 커서를 이동한다.
+first()						void		첫 번쨰 행으로 커서를 이동한다.
+last()						void		마지막 행으로 커서를 이동한다.
+next()						boolean	다음 행으로 커서를 이동한다.
+previous()					boolean	현재 행의 이전 행으로 커서를 이동한다.
+close()					void		ResultSet 객체를 반환할 때 이동한다.

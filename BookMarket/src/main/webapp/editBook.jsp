@@ -1,21 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.*, java.sql.*, dto.*, dao.*" %>
-<jsp:useBean id="bookDAO" class="dao.BookRepository" scope="session"/>
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>도서 목록</title>
+<title>도서 편집</title>
 <link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+<script type="text/javascript">
+	function deleteConfirm(id) {
+		if(confirm("해당 도서를 삭제합니다!!") == true)
+			location.href="./deleteBook.jsp?id=" + id;
+		else
+			return;
+	}
+</script>
+
+<%
+	String edit = request.getParameter("edit");
+%>
+
 <body>
 	<div class="container py-4">
 		<%@ include file="menu.jsp" %>
 		<div class="p-5 mb-4 bg-body-tertiary rounded-3">
 			<div class="container-fluid py-5">
-				<h1 class="display-5 fw-bold">도서목록</h1>
-            	<p class="col-md-8 fs-4">BookList</p>
+				<h1 class="display-5 fw-bold">도서 편집</h1>
+            	<p class="col-md-8 fs-4">BookEditing</p>
 			</div>
 		</div>
 		<%@ include file="dbconn.jsp" %>
@@ -30,14 +42,22 @@
 				while(rs.next()){
 			%>
 			<div class="col-md-4">
-				<div class="h-100 p-2">
+				<div class="h-100 p-2 round-3">
 					<img src="./resources/images/<%=rs.getString("b_fileName") %>" style="width: 250; height: 350" />
 	            	<h5><b><%=rs.getString("b_name") %></b></h5>
 	            	<p><%=rs.getString("b_author") %>
 	            	<br><%=rs.getString("b_publisher") %> | <%=rs.getString("b_releaseDate") %>
 	           		<p><%=rs.getString("b_description").substring(0, 60) %>...
 	            	<p><%=rs.getString("b_unitPrice") %> 원
-	            	<p><a href="./book.jsp?id=<%=rs.getString("b_id") %>" class="btn btn-secondary" role = "button"> 상세정보 &raquo;</a>
+	            	<p><%if(edit.equals("update")){ %>
+	            	<p><a href="./updateBook.jsp?id=<%=rs.getString("b_id") %>" class="btn btn-success" role = "button"> 수정 &raquo;</a>
+	            	<%
+	            		} else if(edit.equals("delete")){
+	            	%>
+	            	<a href="#" onclick="deleteConfirm('<%=rs.getString("b_id") %>')" class="btn btn-danger" role="button">삭제 &raquo;></a>
+	            	<%
+	            		}
+	            	%>
 				</div>
 			</div>
 			<%

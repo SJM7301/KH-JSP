@@ -5,6 +5,7 @@
 	Connection conn = null;
 	
 	String url = "jdbc:mysql://localhost:3306/jspbook";
+	/* String url = "jdbc:mysql://localhost:3306/exercisedb"; */
 	String user = "root";
 	String password = "1111";
 	

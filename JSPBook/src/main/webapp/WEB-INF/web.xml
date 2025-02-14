@@ -21,6 +21,8 @@
 			<!-- <form-login-page>/ch10/login.jsp</form-login-page> -->
 			<form-login-page>/ch10/security_test.jsp</form-login-page>
 			<form-error-page>/ch10/login_failed.jsp</form-error-page>
+			<form-login-page>/test/response.jsp</form-login-page>
+			<form-error-page>/test/response_process.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
 <!-- 	

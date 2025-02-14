@@ -37,7 +37,7 @@
 	            	<br><%=rs.getString("b_publisher") %> | <%=rs.getString("b_releaseDate") %>
 	           		<p><%=rs.getString("b_description").substring(0, 60) %>...
 	            	<p><%=rs.getString("b_unitPrice") %> 원
-	            	<p><a href="./book.jsp?id=<%=rs.getString("b_id") %>" class="btn btn-secondary" role = "button"> 상세정보 &raquo;</a>
+	            	<p><a href="./book.jsp?id=<%=rs.getString("b_id")%>" class="btn btn-secondary" role = "button"> 상세정보 &raquo;</a>
 				</div>
 			</div>
 			<%

@@ -36,19 +36,19 @@ Sql 태그의 종류
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Functions 태그의 종류
 태그				설명
-contains()			
-containsIgnoreCase()	
-startsWith()
-endsWith()
-escapeXml()
-indexOf()
-split()
-join()
-length()
-substring()
-substringAfter()
-substringBefore()
-replace()
-toLowerCase()
-toUpperCase()
-trim()
+contains()			검색 대상 문자열의 포함 여부를 확인한다.
+containsIgnoreCase()	대, 소문자에 관계없이 검색 대상 문자열의 포함 여부를 확인한다.
+startsWith()			특정 문자열로 시작하는지 여부를 확인한다.
+endsWith()			특정 문자열로 끝나는지 여부를 확인한다.
+escapeXml()		문자열에 포함된 특수문자를 특정 코드로 변환한다.
+indexOf()			검색 대상 문자열의 첫 위치 값을 반환한다.
+split()				문자열을 설정한 구분자로 분리하여 배열 형태로 반환한다.
+join()				배열 형태의ㅐ 문자열을 설정한 구분자로 연결하여 반환한다.
+length()			문자열의 길이를 반환한다.
+substring()			특정 위치의 문자열을 반환한다.
+substringAfter()		설정한 문자열 이후의 부분에 있는 문자열을 반환한다.
+substringBefore()		설정한 문자열 이전의 부분에 있는 문자열을 반환한다.
+replace()			검색 대상 문자열을 설정한 문자열로 변경하여 반환한다.
+toLowerCase()		모두 소문자로 변환한다.
+toUpperCase()		모두 대문자로 변환한다.
+trim()				문자열 앞뒤의 공백을 제거하여 반환한다.

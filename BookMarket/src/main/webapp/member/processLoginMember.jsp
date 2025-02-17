@@ -11,7 +11,7 @@
 
 <sql:setDataSource var="dataSource"
 	url="jdbc:mysql://localhost:3306/bookmarket"
-	driver="com.mysql.jc.jdbc.Driver" user="root" password="1111" />
+	driver="com.mysql.cj.jdbc.Driver" user="root" password="1111" />
 
 <sql:query dataSource="${dataSource}" var="resultSet">
    SELECT * FROM MEMBER WHERE ID=? and password=?  

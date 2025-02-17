@@ -25,11 +25,11 @@
 %>
 
 <sql:setDataSource var="dataSource"
-	url="jdbc:mysql://localhost:3306/BookMarketDB"
-	driver="com.mysql.jdbc.Driver" user="root" password="1234" />
+	url="jdbc:mysql://localhost:3306/bookmarket"
+	driver="com.mysql.jdbc.Driver" user="root" password="1111" />
 
 <sql:update dataSource="${dataSource}" var="resultSet">
-   UPDATE MEMBER SET PASSWORD=?, NAME=?, GENDER=?, BIRTH=?, MAIL=?, PHONE=?, ADDRESS=? WHERE ID=?
+   UPDATE MEMBER SET password=?, name=?, gender=?, birth=?, mail=?, phone=?, address=? WHERE id=?
 	<sql:param value="<%=password%>" />
 	<sql:param value="<%=name%>" />
 	<sql:param value="<%=gender%>" />

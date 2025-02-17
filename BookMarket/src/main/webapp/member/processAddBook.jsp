@@ -7,7 +7,7 @@
 	
 	String filename = "";
 	/* String realFolder = "C:\\eclipse\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\JspEx01\\resources\\images"; */
-	String realFolder = "C:\\eclipse\\eclipse-workspace\\JspEx01\\src\\main\\webapp\\resources\\images";
+	String realFolder = "C:\\eclipse\\JSP\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\BookMarket\\resources\\images";
 	int maxSize = 5*1024*1024;
 	String encType = "utf-8";
 	

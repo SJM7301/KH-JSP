@@ -8,7 +8,10 @@
 </head>
 <body>
 	<%
+		// 세션 무효화: 현재 세션을 종료시킴
 		session.invalidate();
+		
+		// 페이지 리디렉션: "addBook.jsp" 페이지로 이동
 		response.sendRedirect("addBook.jsp");
 	%>
 </body>

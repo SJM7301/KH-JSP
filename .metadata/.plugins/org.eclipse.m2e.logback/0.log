@@ -778,3 +778,7 @@
 2025-02-17 17:43:53,941 [Worker-41: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0-sources.jar
 2025-02-17 17:43:53,954 [Worker-41: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0-sources.jar
 2025-02-17 17:43:53,956 [Worker-41: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.xmlunit:xmlunit-core:2.10.0
+2025-02-17 17:50:28,039 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.big:bigTest:0.0.1-SNAPSHOT @ C:\eclipse\JSP\bigTest\pom.xml.
+2025-02-17 17:50:28,257 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-17 17:50:28,258 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-17 17:50:28,260 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\eclipse\JSP\bigTest\src\test\resources

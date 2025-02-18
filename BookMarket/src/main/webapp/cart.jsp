@@ -64,8 +64,17 @@
                         // 장바구니에 담긴 도서 목록을 하나씩 출력
                         for(int i = 0; i < cartList.size(); i++){ 
                             Book book = cartList.get(i);
-                            int total = book.getUnitPrice() * book.getQuantity();
-                            sum = sum + total; // 총액 계산
+                            String bookId = book.getBookId();
+                            
+                            if(bookId != null && !bookId.equals("")){
+                            	String sql = "SELECT * FROM book WHERE b_id=?";
+                            	PreparedStatement pstmt = conn.prepareStatement(sql);
+                            	pstmt.setString(1, bookId);
+                            	ResultSet rs = pstmt.executeQuery();
+                            	
+                            	if(rs.next()){
+	                            	int total = rs.getInt("b_unitPrice") * book.getQuantity();
+	                            	sum += total; // 총액 계산
                     %>
                     
                     <!-- 장바구니에 담긴 도서 정보 출력 -->
@@ -79,6 +88,8 @@
                     </tr>
                     
                     <%
+                            	}
+                            }
                         }
                     %>
                     
